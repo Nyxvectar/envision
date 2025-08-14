@@ -1,7 +1,7 @@
 use crate::dirman::echo_yan::echo_yan;
 
 /**
- * Author:  Nyxvectar Yan 
+ * Author:  Nyxvectar Yan
  * Repo:    rustHello
  * Created: 08/13/2025
  */
@@ -11,18 +11,24 @@ mod dirman {
 }
 
 fn main() {
-    let s = String::from(echo_yan());
-    takes_ownership(s);
-
-    let x = 5;
-    makes_copy(x);
-    println!("{}", x);
+    print_name();
+    {
+        let (a,b) = (1,2);
+        let c = a;
+        let s1 = String::from("Rust is the best.");
+        let s2 = &s1;
+        let mut s3 = "Rust defeated Golang.";
+        s3 = "Just so so.";
+        
+        println!("{},{}",a,c);
+        println!("{}\n{}",s1,*s2);
+        println!("{}", s3);
+    }
 }
 
-fn takes_ownership(some_string: String) {
-    println!("{}", some_string);
-}
-
-fn makes_copy(some_integer: i32) {
-    println!("{}", some_integer);
+fn print_name() {
+    let mut name = "Nyxvectar";
+    name = "Nyxvectar Yan";
+    println!("{}",echo_yan());
+    println!("{}", name);
 }

@@ -1,5 +1,3 @@
-use std::ffi::CString;
-
 /**
  * Author:  Nyxvectar Yan 
  * Repo:    rustHello
