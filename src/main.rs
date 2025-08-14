@@ -10,19 +10,38 @@ mod dirman {
     pub mod echo_yan;
 }
 
+enum Message {
+    Quit,
+    Move { x:i32, y:i32 },
+    Write(String),
+}
+
 fn main() {
+    let score = 85;
+    let msg = Message::Move { x:30, y:40 };
+    
     print_name();
+    
     {
-        let (a,b) = (1,2);
-        let c = a;
-        let s1 = String::from("Rust is the best.");
-        let s2 = &s1;
-        let mut s3 = "Rust defeated Golang.";
-        s3 = "Just so so.";
-        
-        println!("{},{}",a,c);
-        println!("{}\n{}",s1,*s2);
-        println!("{}", s3);
+        match score {
+            90..=100 => println!("优秀"), // 90 到 100（包含）
+            80..=89 => println!("良好"),  // 80 到 89
+            60..=79 => println!("及格"),
+            0..=59 => println!("不及格"),
+            _ => println!("分数无效"), // 处理负数或超过 100 的情况
+        }
+    }
+    
+    match msg { 
+        Message::Quit => {
+            println!("Quit")
+        }
+        Message::Move { x, y} => {
+            println!("Move to {}, {}", x,y)
+        }
+        Message::Write(text) => {
+            println!("Write {}", text)
+        }
     }
 }
 
