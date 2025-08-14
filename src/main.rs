@@ -2,12 +2,24 @@ use crate::dirman::echo_yan::echo_yan;
 
 /**
  * Author:  Nyxvectar Yan
- * Repo:    rustHello
+ * Repo:    rust-learn
  * Created: 08/13/2025
  */
 
 mod dirman {
     pub mod echo_yan;
+}
+
+enum Coin {
+    Penny,
+    Nickel,
+    Dime,
+    Quarter,
+}
+
+enum Result<T, E> {
+    Ok(T),
+    Err(E),
 }
 
 enum Message {
@@ -21,6 +33,7 @@ fn main() {
     let msg = Message::Move { x:30, y:40 };
     
     print_name();
+    handle_errs();
     
     {
         match score {
@@ -42,6 +55,20 @@ fn main() {
         Message::Write(text) => {
             println!("Write {}", text)
         }
+    }
+    println!("Coin {}", value_in_cents(Coin::Quarter))
+}
+
+fn handle_errs() {
+    //TODO.
+}
+
+fn value_in_cents(coin: Coin) -> u8 {
+    match coin { 
+        Coin::Dime => 1,
+        Coin::Nickel => 2,
+        Coin::Penny => 3,
+        Coin::Quarter => 4,
     }
 }
 
