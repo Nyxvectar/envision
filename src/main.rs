@@ -17,6 +17,12 @@ struct User {
     sign_in_count: u64,
 }
 
+// #[derive(Debug)]
+// struct File {
+//     name: String,
+//     data: Vec<8>,
+// }
+
 fn main() {
     let email = "Nyxvectar@proton.me";
     let mut user1 = User {
