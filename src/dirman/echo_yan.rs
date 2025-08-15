@@ -1,7 +1,7 @@
 /**
  * Author:  Nyxvectar Yan 
  * Repo:    rustHello
- * Created: 08/14/2025
+ * Created: 08/15/2025
  */
 
 pub fn echo_yan()-> String {
