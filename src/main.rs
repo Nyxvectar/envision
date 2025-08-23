@@ -3,13 +3,19 @@ use std::io;
 fn main() {
     let mut input = String::new();
     io::stdin().read_line(&mut input).unwrap();
-    let get: Vec<f32> = input
+    let get: Vec<i32> = input
         .trim()
         .split_whitespace()
         .map(|x| x.parse().unwrap())
         .collect();
-    let (t, n) = (get[0], get[1]);
+    let (s, v) = (get[0], get[1]);
+    let mut time_need = (s as f64 / v as f64).ceil() as i32 + 10;
 
-    println!("{:.3}", t / n);
-    print!("{}", n * 2.0)
+    let mut hours_demand = (time_need as f64 / 60 as f64).ceil() as i32;
+    let minutes_demand = time_need % 60;
+
+    let hour = (32 - hours_demand) % 24;
+    let minute = (60 - minutes_demand) % 60;
+
+    println!("{:02}:{:02}", hour, minute);
 }
