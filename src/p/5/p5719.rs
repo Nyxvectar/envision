@@ -20,7 +20,7 @@ fn main() {
         }
     }
     print!(
-        "{:.1}, {:.1}",
+        "{:.1} {:.1}",
         atotal[1] as f64 / atotal[0] as f64,
         btotal[1] as f64 / btotal[0] as f64
     )
