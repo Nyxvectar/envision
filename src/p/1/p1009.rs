@@ -3,7 +3,6 @@
  * Repo:    rustHello
  * Created: 08/24/2025
  */
-
 use std::io;
 
 fn main() {
