@@ -1,3 +1,8 @@
+/**
+ * Author:  Nyxvectar Yan
+ * Repo:    rustHello
+ * Created: 08/30/2025
+ */
 use std::arch::x86_64::_xgetbv;
 use std::cmp::max;
 use std::io;
