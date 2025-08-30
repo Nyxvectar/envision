@@ -1,3 +1,8 @@
+/**
+ * Author:  Nyxvectar Yan
+ * Repo:    rustHello
+ * Created: 08/30/2025
+ */
 use std::io;
 
 fn main() {
