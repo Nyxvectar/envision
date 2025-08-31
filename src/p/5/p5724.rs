@@ -1,5 +1,5 @@
 /**
- * Author:  Nyxvectar Yan 
+ * Author:  Nyxvectar Yan
  * Repo:    rustHello
  * Created: 08/31/2025
  */
