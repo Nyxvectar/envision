@@ -6,18 +6,18 @@
 use std::io;
 
 fn main() {
-    let k = input(2);
-    let mut sum = 0;
-    for i in 1..=k[0] {
-        let mut temp = i;
-        while temp != 0 {
-            if (temp % 10) == k[1] {
-                sum += 1;
-            }
-            temp /= 10;
+    let get = input(1)[0];
+    let mut temp = 0.0;
+    let mut n = 1;
+    loop {
+        temp += 1.0 / n as f64;
+        if temp > get as f64 {
+            break;
+        } else {
+            n += 1;
         }
     }
-    println!("{}", sum);
+    print!("{}", n)
 }
 
 fn input(how_many_need: i64) -> Vec<i64> {
