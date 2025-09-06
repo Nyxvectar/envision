@@ -2,15 +2,6 @@ use std::io;
 
 fn main() {
     let get = input(1)[0];
-    let mut i = 2;
-    loop {
-        if get % i == 0 {
-            break;
-        } else {
-            i += 1;
-        }
-    }
-    print!("{}", get / i)
 }
 
 fn input(how_many_need: i64) -> Vec<i64> {
