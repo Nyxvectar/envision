@@ -1,3 +1,8 @@
+/**
+ * Author:  Nyxvectar Yan
+ * Repo:    rustHello
+ * Created: 09/06/2025
+ */
 use std::io;
 
 fn is_prime(n: u32) -> bool {
