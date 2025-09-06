@@ -1,3 +1,9 @@
+/**
+ * Author:  Nyxvectar Yan 
+ * Repo:    rustHello
+ * Created: 09/06/2025
+ */
+
 struct Solution;
 
 fn main() {
