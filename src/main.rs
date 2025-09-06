@@ -2,18 +2,6 @@ use std::io;
 
 fn main() {
     let get = input(1)[0];
-    let mut present = 0.0;
-    let mut march = 2.0;
-    let mut count = 0;
-    loop {
-        if present >= get {
-            break;
-        }
-        present += march;
-        march *= 0.98;
-        count += 1;
-    }
-    print!("{:}", count)
 }
 
 fn input(how_many_need: i64) -> Vec<f64> {
