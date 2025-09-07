@@ -1,9 +1,8 @@
 /**
- * Author:  Nyxvectar Yan 
+ * Author:  Nyxvectar Yan
  * Repo:    rustHello
  * Created: 09/07/2025
  */
-
 use itertools::Itertools;
 
 struct Solution;
