@@ -1,7 +1,7 @@
 use std::io;
 
 /**
- * Author:  Nyxvectar Yan
+ * Author:  Raye Lattice 
  * Repo:    rustHello
  * Created: 08/23/2025
  */
