@@ -1,11 +1,8 @@
-use std::panic::catch_unwind;
-
-struct Solution;
-
-fn main() {
-    let result = "Raye Lattice";
-    println!("{:?}", result);
-}
+/**
+ * Author:  Raye Lattice
+ * Repo:    rustHello
+ * Created: 09/14/2025
+ */
 
 impl Solution {
     pub fn common_factors(a: i32, b: i32) -> i32 {
