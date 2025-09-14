@@ -1,9 +1,8 @@
-struct Solution;
-
-fn main() {
-    let result = "Raye Lattice";
-    println!("{:?}", result);
-}
+/**
+ * Author:  Raye Lattice
+ * Repo:    rustHello
+ * Created: 09/14/2025
+ */
 
 impl Solution {
     pub fn sum_of_multiples(n: i32) -> i32 {
