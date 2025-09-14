@@ -3,7 +3,6 @@
  * Repo:    rustHello
  * Created: 09/14/2025
  */
-
 use std::i128;
 
 struct Solution;
