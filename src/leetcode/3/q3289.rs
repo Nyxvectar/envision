@@ -1,3 +1,9 @@
+/**
+ * Author:  Raye Lattice
+ * Repo:    rustHello
+ * Created: 09/14/2025
+ */
+
 struct Solution;
 
 fn main() {
