@@ -7,7 +7,7 @@
 struct Solution;
 
 fn main() {
-    let result = "abcabcabcabc".to_string();
+    let result = "abcabc".to_string();
     println!("{:?}", Solution::repeated_substring_pattern(result));
 }
 
