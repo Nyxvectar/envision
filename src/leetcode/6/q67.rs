@@ -1,3 +1,9 @@
+/**
+ * Author:  Raye Lattice
+ * Repo:    rustHello
+ * Created: 09/14/2025
+ */
+
 use std::i128;
 
 struct Solution;
@@ -41,7 +47,7 @@ impl Solution {
         res
     }
 
-    // fn binary_to_decimal(binary: &str) -> Result<u32, std::num::ParseIntError> {
-    //     u32::from_str_radix(binary, 2)
-    // }
+    fn binary_to_decimal(binary: &str) -> Result<u32, std::num::ParseIntError> {
+        u32::from_str_radix(binary, 2)
+    }
 }
