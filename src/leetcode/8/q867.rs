@@ -1,5 +1,5 @@
 /**
- * Author:  Raye Lattice 
+ * Author:  Raye Lattice
  * Repo:    rustHello
  * Created: 09/07/2025
  */
