@@ -1,1 +1,1 @@
-My drafts & exercises during rust learning.
+Drafts during getting started with rust

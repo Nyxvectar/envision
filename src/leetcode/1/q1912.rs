@@ -1,12 +1,10 @@
 /**
  * Author:  Raye Lattice
- * Repo:    rustHello
+ * Repo:    asen-nor
  * Created: 09/21/2025
  */
 
-struct MovieRentingSystem {
-
-}
+struct MovieRentingSystem {}
 
 /**
  * `&self` means the method takes an immutable reference.
@@ -14,26 +12,15 @@ struct MovieRentingSystem {
  */
 
 impl MovieRentingSystem {
+    fn new(n: i32, entries: Vec<Vec<i32>>) -> Self {}
 
-    fn new(n: i32, entries: Vec<Vec<i32>>) -> Self {
+    fn search(&self, movie: i32) -> Vec<i32> {}
 
-    }
+    fn rent(&self, shop: i32, movie: i32) {}
 
-    fn search(&self, movie: i32) -> Vec<i32> {
+    fn drop(&self, shop: i32, movie: i32) {}
 
-    }
-
-    fn rent(&self, shop: i32, movie: i32) {
-
-    }
-
-    fn drop(&self, shop: i32, movie: i32) {
-
-    }
-
-    fn report(&self) -> Vec<Vec<i32>> {
-
-    }
+    fn report(&self) -> Vec<Vec<i32>> {}
 }
 
 /**
@@ -44,4 +31,3 @@ impl MovieRentingSystem {
  * obj.drop(shop, movie);
  * let ret_4: Vec<Vec<i32>> = obj.report();
  */
- 
