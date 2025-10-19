@@ -1,7 +1,8 @@
-struct Solution;
-fn main() {
-    println!("{:?}", Solution::max_area(vec![1, 8, 6, 2, 5, 4, 8, 3, 7]));
-}
+/**
+ * Author:  Raye Lattice
+ * Repo:    envision
+ * Created: 10/19/2025
+ */
 
 use std::cmp;
 

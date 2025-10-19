@@ -1,1 +1,0 @@
-Drafts during getting started with rust
