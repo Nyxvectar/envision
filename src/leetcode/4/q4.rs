@@ -1,6 +1,8 @@
-struct Solution;
-
-fn main() {}
+/**
+ * Author:  Raye Lattice
+ * Repo:    envision
+ * Created: 10/19/2025
+ */
 
 impl Solution {
     pub fn find_median_sorted_arrays(nums1: Vec<i32>, nums2: Vec<i32>) -> f64 {
