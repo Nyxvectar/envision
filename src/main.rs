@@ -2,14 +2,19 @@ struct Solution;
 fn main() {}
 
 impl Solution {
-    pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
-        let mut ans: Vec<i32> = vec![];
-        for i in 0..nums.len() {
-            for k in i + 1..nums.len() {
-                if nums[i] + nums[k] == target {
-                    ans = vec![i as i32, k as i32];
-                }
+    pub fn longest_common_prefix(mut strs: Vec<String>) -> String {
+        if strs.is_empty() {
+            return String::new();
+        }
+        strs.sort();
+        let first = &strs[0];
+        let last = &strs[strs.len() - 1];
+        let mut ans = String::new();
+        for (a, b) in first.chars().zip(last.chars()) {
+            if a != b {
+                break;
             }
+            ans.push(a);
         }
         ans
     }
