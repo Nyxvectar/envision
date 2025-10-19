@@ -1,5 +1,8 @@
-struct Solution;
-fn main() {}
+/**
+ * Author:  Raye Lattice
+ * Repo:    envision
+ * Created: 10/19/2025
+ */
 
 impl Solution {
     pub fn search_insert(nums: Vec<i32>, target: i32) -> i32 {
